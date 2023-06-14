@@ -1,10 +1,27 @@
 # <p><b>Exploratory Data Analysis With SQLite</b></p>
 
-<img src="excel_img.png" alt="Excel logo" style="margin-left: auto; margin-right: auto; height: 100px; width: 100px;"/>
+<img src="sql.png" alt="SQL logo" style="margin-left: auto; margin-right: auto; height: 100px; width: 100px;"/><img src="python.webp" alt="python logo" style="margin-left: auto; margin-right: auto; height: 100px; width: 100px;"/><img src="sqlite.png" alt="SQLite logo" style="margin-left: auto; margin-right: auto; height: 100px; width: 100px;"/>
 
-Exploratory data analysis (EDA) is an approach to analyzing data sets to summarize their main characteristics, often with visual methods. SQL is a powerful tool for data analysis and can be used for EDA.
-The process of exploring a database starts by identifying the tables and the foreign keys that link them. Identifying missing values, counting the number of observations, and joining tables to understand relationships.Exploratory data analysis (EDA) with SQLite is a crucial step in understanding and gaining insights from data using SQLite database tool ⚙.
+<b>Exploratory data analysis (EDA)</b> is an approach to analyzing data sets to summarize their main characteristics, often with visual methods. SQL is a powerful tool for data analysis and can be used for EDA.
+The process of exploring a database starts by identifying the tables and the foreign keys that link them. Identifying missing values, counting the number of observations, and joining tables to understand relationships.Exploratory data analysis (EDA) with SQLite is a crucial step in understanding and gaining insights from data using **SQLite database tool** ⚙.
 The dataset, Olympic Games Data, used here was got from Kaggle, and included a 120-year history of the beautiful sports ecumenism.
+<p><b></b>Here are the Features (Data Dictionary):</b></p>
+  
+- ID - Unique number for each athlete
+- Name - Athlete's name
+- Sex - M or F
+- Age - Integer
+- Height - In centimeters
+- Weight - In kilograms
+- Team - Team name
+- NOC - National Olympic Committee (3-letter code)
+- Games - Year and season
+- Year - Integer
+- Season - Summer or Winter
+- City - Host city
+- Sport - Sport
+- Event - Event
+- Medal - Gold, Silver, Bronze, or NA
 
 <p><b>Here are description of how to perform EDA with SQLite:</b></p>
 
@@ -15,4 +32,4 @@ The dataset, Olympic Games Data, used here was got from Kaggle, and included a 1
   - Investigate, if needed, the distribution of numerical variables by executing queries such as <b>SELECT MIN(columnname), MAX(columnname), AVG(columnname) FROM tablename;</b>.
   - Calculate summary statistics for numeric columns using aggregate functions like <b>SUM, COUNT, AVG, MIN, and MAX</b> combined with the <b>GROUP BY</b> clause to analyze different subsets of data.
   - Explore the distribution of categorical variables by querying <b>SELECT columnname, COUNT(*) FROM tablename GROUP BY columnname;</b> to retrieve the frequency count for each unique category.
-<p>Remember, SQLite is primarily a database engine, and while it provides powerful querying capabilities, some advanced EDA tasks may require exporting data to a dedicated statistical analysis tool or programming language like Python. And in this case Python via Jupyter Notebook was employed.</p>
+<p>Remember, SQLite is primarily a database engine, and while it provides powerful querying capabilities, some advanced EDA tasks may require exporting data to a dedicated statistical analysis tool or programming language like Python. And in this case <b>Python via Jupyter Notebook</b> was employed.</p>
